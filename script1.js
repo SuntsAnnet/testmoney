@@ -4,7 +4,7 @@ console.log(money);
 let time = prompt("Введите дату в формате YYYY-MM-DD",'');
 console.log(time);
 let appData = {
-    you_money: money,
+    your_money: money,
     timeData: time,
     expenses: {},
     optionalExpenses:{},
@@ -27,14 +27,14 @@ for(let i=0;i<count_quest;i++) {
 //let a = prompt("Введите обязательную статью расходов в этом месяце","");
 //let b = prompt("Во сколько обойдется?","");
 //appData.expenses.a=b;
-alert(`Ваш свободный бюджет составляет ${(appData.you_money - waste)} `);
+alert(`Ваш свободный бюджет составляет ${(appData.your_money - waste)} `);
  
-switch ((appData.you_money - waste)/30) {
-    case'((appData.you_money - waste)/30)<100': console.log('низкий бюджет') ;
+switch ((appData.your_money - waste)) {
+    case((appData.your_money - waste)<100): console.log('низкий бюджет') ;
     break;
-    case'((appData.you_money - waste)/30)>100 && ((appData.you_money - waste)/30)<1000':console.log( 'средний бюджет' );
+    case(((appData.your_money - waste)>100) && ((appData.your_money - waste)<1000)):console.log( 'средний бюджет' );
     break;
-    case'((appData.you_money - waste)/30)>1000': console.log('тратьте сколько хотите') ;
+    case((appData.your_money - waste)>1000): console.log('тратьте сколько хотите') ;
     break;
 }
 
